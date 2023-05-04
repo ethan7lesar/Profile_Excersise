@@ -1,0 +1,75 @@
+body{
+    background-color: #E4BB8A !important;
+    color: #228B22 !important;
+}
+
+#logo{
+    color: #228B22;
+}
+
+button{
+    background-color: #228B22 !important;
+    border: #228B22 !important;
+}
+
+.photo{
+    width: 500px;
+    height: 340px ;
+}
+
+
+.flip-card {
+    background-color: transparent;
+   margin: 0;
+   width: 500px;
+   height: 340px ;
+    
+    perspective: 1000px; 
+    
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+   
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: black ;
+    color: white;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: transparent;
+    color: #E4BB8A;
+    width: 500px;
+    height: 340px ;
+    transform: rotateY(180deg);
+  }
+
+  footer{
+    display: flex;
+    justify-content: center !important;
+  }
+
